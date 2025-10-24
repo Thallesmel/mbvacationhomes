@@ -1,8 +1,6 @@
-// src/components/BookingForm.tsx
 export default function BookingForm() {
   return (
-    <section className='bg-gray-800 py-12 px-6'>
-      <h2 className='text-3xl font-semibold text-center mb-8'>Reserve Agora</h2>
+    <section className='bg-black py-12 px-6'>
       <form className='max-w-xl mx-auto bg-white p-6 rounded-2xl shadow-md space-y-4'>
         <div>
           <label htmlFor='fullName' className='block text-gray-700 mb-1'>

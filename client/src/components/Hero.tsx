@@ -1,6 +1,6 @@
 import RatingBadge from './RatingBadge';
 import heroVideo from '../assets/videos/video-casa.mp4';
-import heroPoster from '../assets/images/piscina-home.jpg';
+import heroPoster from '../assets/images/PoolBar/piscina-home.jpg';
 
 export default function Hero() {
   return (
@@ -25,13 +25,13 @@ export default function Hero() {
           Sua viagem ao Paraíso
         </h1>
         <p className='text-lg md:text-xl text-white/90 mb-8'>
-          Explore cada detalhe com um vídeo exclusivo do seu lar
+          Explore cada detalhe de Maragogi com a melhor experiência.
         </p>
 
         <div className='flex flex-wrap justify-center gap-4'>
           <a
             href='/reservar'
-            className='border border-white px-6 py-3 rounded-full hover:bg-white hover:text-gray-900 transition font-medium'
+            className='border border-white px-6 py-3 rounded-full hover:bg-white hover:text-gray-900 hover:border-gray-900 transition font-medium'
           >
             Reservar Agora
           </a>
@@ -39,13 +39,13 @@ export default function Hero() {
             href='https://wa.me/5581999999999'
             target='_blank'
             rel='noopener noreferrer'
-            className='border border-white px-6 py-3 rounded-full hover:bg-white hover:text-gray-900 transition font-medium'
+            className='border border-white px-6 py-3 rounded-full hover:bg-white hover:text-gray-900 hover:border-gray-900 transition font-medium'
           >
             Fale Conosco
           </a>
         </div>
 
-        <div className='mt-12'>
+        <div className='mt-80'>
           <RatingBadge />
         </div>
       </div>

@@ -1,29 +1,11 @@
 import express from "express";
 import cors from "cors";
-import dotenv from "dotenv";
-
-dotenv.config();
+import calendarRouter from "./routes/calendar.js";
 
 const app = express();
-// Configure CORS for specific origins and methods
-const corsOptions = {
-  origin: ["https://your-allowed-origin.com"], // Replace with your allowed origins
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-};
-
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("Server running 🚀");
-});
+app.use("/ical", calendarRouter);
 
-const PORT = process.env.PORT || 4000;
-const logger = {
-  info: (message: string, ...meta: any[]) => console.log(message, ...meta),
-  warn: (message: string, ...meta: any[]) => console.warn(message, ...meta),
-  error: (message: string, ...meta: any[]) => console.error(message, ...meta),
-};
-
-app.listen(PORT, () => logger.info(`Server running on port ${PORT}`));
+app.listen(5000, () => console.log("✅ Server running on http://localhost:5000"));
