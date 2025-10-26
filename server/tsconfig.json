@@ -15,7 +15,7 @@
         ],
         "types": [
           "node",
-          "express" // Ensure 'express' is listed if you're explicitly defining types
+          "express"
         ]
   },
   "include": ["src"]
